@@ -1,0 +1,10 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - pip install .
+
+  build:
+    commands:
+      - multiplexer -V -c s3://$MULTIPLEXER_CONFIG_BUCKET/$MULTIPLEXER_CONFIG_NAME -d s3://$ARTIFACT_BUCKET/`date +%s` -T $GITHUB_TOKEN $ARTIFACTS

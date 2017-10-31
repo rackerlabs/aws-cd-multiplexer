@@ -1,0 +1,23 @@
+{
+  "artifacts":[
+    {
+      "name": "production/allapps",
+      "sources": [
+        {"name": "app1", "revision": "master"},
+        {"name": "app2", "revision": "prod"}
+      ]
+    }
+  ],
+  "sources": {
+    "app1": {
+       "owner": "myorg",
+       "repository": "app1",
+       "type": "github"
+    },
+    "app2": {
+       "owner": "myorg",
+       "repository": "app2",
+       "type": "github"
+    }
+  }
+}
