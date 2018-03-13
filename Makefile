@@ -1,6 +1,6 @@
 package: clean
 		@echo "Packaging ..."
-		@zip -r --exclude=tests/* build.zip .
+		@zip -r --exclude=tests/* --exclude=.git/* build.zip .
 
 clean:
 		@echo "Cleaning up ..."
